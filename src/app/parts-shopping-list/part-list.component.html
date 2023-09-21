@@ -8,7 +8,7 @@
         style="cursor: pointer"
         *ngFor="let part of parts"
       >
-        {{ part.amount }} x <b>{{ part.number }}</b> {{ part.name }}
+        <b>{{ part.number }}</b> ({{ part.amount }})
       </a>
     </ul>
   </div>
