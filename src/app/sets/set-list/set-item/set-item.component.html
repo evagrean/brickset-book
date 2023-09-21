@@ -1,0 +1,18 @@
+<div class="col-xs-12">
+  <a href="#" class="list-group-item clearfix">
+    <div class="pull-left">
+      <h4 class="list-group-item-heading">{{ set.name }}</h4>
+      <p class="list-group-item-text">{{ set.description }}</p>
+      <p class="list-group-item-text">Parts: {{ set.parts }}</p>
+      <p class="list-group-item-text">Theme: {{ set.theme }}</p>
+    </div>
+    <span class="pull-right">
+      <img
+        [src]="set.imagePath"
+        alt="{{ set.name }}"
+        class="img-responsive"
+        style="max-height: 100px"
+      />
+    </span>
+  </a>
+</div>

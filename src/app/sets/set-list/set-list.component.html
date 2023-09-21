@@ -1,0 +1,20 @@
+<div class="row">
+  <div class="col-xs-12">
+    <button class="button btn-success">New Set</button>
+  </div>
+</div>
+<hr />
+<div class="row">
+  <!-- <div class="col-xs-12">
+    <a href="#" class="list-group-item clearfix">
+      <div class="pull-left">
+        <h4 class="list-group-item-heading">Set Name</h4>
+        <p class="list-group-item-text">Description</p>
+      </div>
+      <span class="pull-right">
+        <img src="" alt="" class="img-responsive" style="max-heigt: 50px" />
+      </span>
+    </a>
+  </div> -->
+  <app-set-item *ngFor="let set of sets" [set]="set"></app-set-item>
+</div>
