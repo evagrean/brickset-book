@@ -3,7 +3,13 @@
     <app-part-list-edit></app-part-list-edit>
     <hr />
     <ul class="list-group">
-      <a class="list-group-item" style="cursor: pointer"></a>
+      <a
+        class="list-group-item"
+        style="cursor: pointer"
+        *ngFor="let part of parts"
+      >
+        {{ part.amount }} x <b>{{ part.number }}</b> {{ part.name }}
+      </a>
     </ul>
   </div>
 </div>
